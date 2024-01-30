@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 import random
-import simpleaudio as sa
 
 class FlashcardApp:
     def __init__(self, root):
@@ -151,7 +150,6 @@ class FlashcardApp:
         # Perform a case-insensitive comparison
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
-            self.play_ding_sound()
             messagebox.showinfo("Correct!", "Great job! You got it right!")
             self.update_score()
             self.remove_current_flashcard()
@@ -165,19 +163,9 @@ class FlashcardApp:
     def remove_current_flashcard(self):
         self.flashcards.remove(self.current_flashcard)
 
-    def play_ding_sound(self):
-        try:
-            wave_obj = sa.WaveObject.from_wave_file("ding.wav")  # Replace "ding.wav" with your sound file name
-            play_obj = wave_obj.play()
-            play_obj.wait_done()
-        except Exception as e:
-            print(f"Error playing sound: {e}")
-
-    def get_all_answers_except_current(self):
-        return [flashcard["answer"] for flashcard in self.flashcards if flashcard != self.current_flashcard]
-
 if __name__ == "__main__":
     root = tk.Tk()
     app = FlashcardApp(root)
     root.mainloop()
+
 
