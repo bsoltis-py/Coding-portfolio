@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+
+        p {
+            background-image: url();
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(whitepinkhearts.jpg);
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .proposal-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+
+        .btn-yes, .btn-no {
+            display: inline-block;
+            padding: 10px;
+            font-size: 20px;
+            margin: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .btn-yes {
+            background-color: #4caf50;
+        }
+
+        .btn-no {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="proposal-box">
+    <h2>Will you be my Valentine?</h2>
+    <button class="btn-yes" onclick="handleYesClick()">Yes 👉👈 🥺</button>
+    <button class="btn-no" onclick="handleNoClick()">No ❌</button>
+</div>
+
+<script>
+    
+    function handleYesClick() {
+        window.location.href = "https://www.youtube.com/watch?v=Gnm3hIcjiCQ";
+    }
+
+    function handleNoClick() {
+        const yesButton = document.querySelector('.btn-yes');
+        const currentWidth = yesButton.offsetWidth;
+        const currentHeight = yesButton.offsetHeight;
+        yesButton.style.width = (currentWidth + 20) + 'px';
+        yesButton.style.height = (currentHeight + 20) + 'px';
+    }
+</script>
+
+</body>
+</html>
