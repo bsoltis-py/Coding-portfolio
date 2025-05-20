@@ -1,0 +1,11 @@
+First Name: Joe, Last Name: Smith, Phone Number: 555-1111, Salary: 90000.
+First Name: Mary, Last Name: Jones, Phone Number: 555-2222, Salary: 95000.
+First Name: Sue, Last Name: Henry, Phone Number: 555-3333, Salary: 40000.
+First Name: Peter, Last Name: Doe, Phone Number: 555-4444, Salary: 60000.
+First Name: Chris, Last Name: Lee, Phone Number: 555-5555, Salary: 70000.
+First Name: Lyn, Last Name: Wong, Phone Number: 555-6666, Salary: 70000.
+First Name: John, Last Name: Young, Phone Number: 555-7777, Salary: 90000.
+First Name: Jason, Last Name: South, Phone Number: 555-8888, Salary: 90000.
+First Name: Kevin, Last Name: Hero, Phone Number: 555-9999, Salary: 90000.
+First Name: Julie, Last Name: Smart, Phone Number: 555-1212, Salary: 75000.
+First Name: Karen, Last Name: Sweet, Phone Number: 555-1122, Salary: 45000.
